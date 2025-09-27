@@ -9,8 +9,8 @@ function HomePage() {
         { icon: User, label: 'About Me' },
         { icon: Linkedin, label: 'Linkedin', href:'https://www.linkedin.com/in/rayatchowdhury2005', external: true },
         { icon: Mail, label: 'Email' },
-        { icon: Instagram, label: 'Instagram' },
-        { icon: Github, label: 'Github' }
+        { icon: Instagram, label: 'Instagram', href: '' },
+        { icon: Github, label: 'Github', href: 'https://github.com/TheDonRay', external: true}
     ];
 
     return (
@@ -24,6 +24,13 @@ function HomePage() {
                         const IconComponent = item.icon;
                         const isHovered = hoveredIndex === index;
                         
+                        const handleClick = () => { 
+                            if (item.external && item.href){ 
+                                window.open(item.href, "_blank"); 
+                            } else if (item.label === "Email"){ 
+                                window.location.href = "mailto:rayatchowdhury2005@gmail.com"; 
+                            }
+                        }
                         return (
                             <div
                                 key={index}
@@ -38,7 +45,9 @@ function HomePage() {
                                 </div>
 
                                 {/* Icon Button */}
-                                <button className={`icon-button ${isHovered ? 'icon-button-hovered' : ''}`}>
+                                <button className={`icon-button ${isHovered ? 'icon-button-hovered' : ''}`} 
+                                    onClick={handleClick} 
+                                >
                                     {/* Glow effect */}
                                     <div className={`glow-effect ${isHovered ? 'glow-visible' : ''}`}></div>
                                     
