@@ -66,7 +66,8 @@ function HomePage() {
                         );
                     })}
                 </div>
-
+                
+                {/* TODO: Need to add more orbs so that its all over the place on the page */}
                 {/* Floating orbs around navbar */}
                 <div className="floating-orb floating-orb-1"></div>
                 <div className="floating-orb floating-orb-2"></div>

@@ -150,37 +150,37 @@
 }
 
 .floating-orb-1 {
-    top: -2rem;
+    top: -4rem;
     left: -2rem;
-    width: 1rem;
-    height: 1rem;
-    background: rgba(255, 255, 255, 0.2);
+    width: 2rem;
+    height: 2rem;
+    background: white;
 }
 
 .floating-orb-2 {
-    bottom: -1.5rem;
-    right: -1.5rem;
-    width: 0.75rem;
-    height: 0.75rem;
-    background: rgba(103, 232, 249, 0.3);
+    bottom: -3.5rem;
+    right: -2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
     animation-delay: 0.7s;
 }
 
 .floating-orb-3 {
     top: 50%;
-    right: -3rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    background: rgba(249, 168, 212, 0.3);
+    right: -4rem;
+    width: 2rem;
+    height: 2rem;
+    background: white;
     animation-delay: 0.3s;
 }
 
 @keyframes pulse {
     0%, 100% {
-        opacity: 1;
+        opacity: 5;
     }
     50% {
-        opacity: 0.3;
+        opacity: 0.1;
     }
 }
 

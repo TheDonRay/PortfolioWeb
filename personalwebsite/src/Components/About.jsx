@@ -1,5 +1,6 @@
 import React from 'react'; 
 
+//TODO: Create CSS files for the pages here and add to them of what you want to add and like a cool little about yourself etc. 
 
 function AboutMe() { 
     return( 

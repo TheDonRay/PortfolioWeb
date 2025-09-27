@@ -1,5 +1,6 @@
 import React from "react"; 
 
+//TODO: Create CSS files for the eMAIL PAGES that has a cool way for people to reach out to you.  
 
 function EmailPage() { 
     return( 
