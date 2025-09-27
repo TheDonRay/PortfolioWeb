@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { User, Github, Mail, Linkedin, Instagram } from 'lucide-react'; 
-// import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom'; 
 import "../Styles/Home.css";
 
 function HomePage() { 
-    // const navigate = useNavigate(); 
-    // // navigate('/about'); 
+    const navigate = useNavigate(); 
+    navigate('/about'); 
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const navItems = [
