@@ -33,6 +33,8 @@ function HomePage() {
                                 window.open(item.href, "_blank"); 
                             } else if (item.label === "About Me"){ 
                                 navigatetoAbout('/about'); 
+                            } else if (item.label === "Email"){ 
+                                navigatetoEmail('/email'); 
                             }
                         }
                         return (
