@@ -1,15 +1,18 @@
 import React, { useState } from "react";
-import { User, Github, Mail, Linkedin, Instagram } from 'lucide-react';
+import { User, Github, Mail, Linkedin, Instagram } from 'lucide-react'; 
+// import { useNavigate } from 'react-router-dom'; 
 import "../Styles/Home.css";
 
-function HomePage() {
+function HomePage() { 
+    // const navigate = useNavigate(); 
+    // // navigate('/about'); 
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const navItems = [
-        { icon: User, label: 'About Me' },
+        { icon: User, label: 'About Me',  },
         { icon: Linkedin, label: 'Linkedin', href:'https://www.linkedin.com/in/rayatchowdhury2005', external: true },
         { icon: Mail, label: 'Email' },
-        { icon: Instagram, label: 'Instagram', href: '' },
+        { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/rayyatttz', external: true },
         { icon: Github, label: 'Github', href: 'https://github.com/TheDonRay', external: true}
     ];
 
