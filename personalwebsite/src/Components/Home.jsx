@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import "../Styles/Home.css";
 
 function HomePage() { 
-    const navigate = useNavigate(); 
-    navigate('/about'); 
+    const navigatetoAbout = useNavigate(); 
+    const navigatetoEmail = useNavigate(); 
+
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const navItems = [
-        { icon: User, label: 'About Me',  },
+        { icon: User, label: 'About Me', w: '/about'},
         { icon: Linkedin, label: 'Linkedin', href:'https://www.linkedin.com/in/rayatchowdhury2005', external: true },
         { icon: Mail, label: 'Email' },
         { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/rayyatttz', external: true },
@@ -30,8 +31,8 @@ function HomePage() {
                         const handleClick = () => { 
                             if (item.external && item.href){ 
                                 window.open(item.href, "_blank"); 
-                            } else if (item.label === "Email"){ 
-                                window.location.href = "mailto:rayatchowdhury2005@gmail.com"; 
+                            } else if (item.label === "About Me"){ 
+                                navigatetoAbout('/about'); 
                             }
                         }
                         return (
@@ -49,7 +50,7 @@ function HomePage() {
 
                                 {/* Icon Button */}
                                 <button className={`icon-button ${isHovered ? 'icon-button-hovered' : ''}`} 
-                                    onClick={handleClick} 
+                                    onClick={() => {handleClick(item)}}
                                 >
                                     {/* Glow effect */}
                                     <div className={`glow-effect ${isHovered ? 'glow-visible' : ''}`}></div>
