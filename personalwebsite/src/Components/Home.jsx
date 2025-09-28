@@ -19,7 +19,7 @@ function HomePage() {
 
     return (
         <div className="homepage-container">
-            <h1 className="h1css">Hey! I'm Rayat Chowdhury</h1>
+            <h1 className="h1css">Hey! My Name is Rayat Chowdhury. Welcome to My Portfolio!</h1>
             
             {/* Floating Navigation Bar */}
             <nav className="floating-navbar">
