@@ -4,7 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import "../Styles/Home.css";
 
 //TODO: change text to a more cooler font and put some coloring on it. 
-//REMINDER: Added the Gitbranch create a page which holds the projects I did in a grid layout. 
+//REMINDER: Added the Gitbranch create a page which holds the projects I did in a grid layout.  
+//TODO: make sure to link it onto the navItems which is a array of objects.  
+
 function HomePage() { 
     const navigatetoAbout = useNavigate(); 
     const navigatetoEmail = useNavigate(); 
