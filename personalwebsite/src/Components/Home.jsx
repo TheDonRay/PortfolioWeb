@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { User, Github, Mail, Linkedin, Instagram } from 'lucide-react'; 
+import { User, Github, Mail, Linkedin, Instagram, GitBranch} from 'lucide-react'; 
 import { useNavigate } from 'react-router-dom'; 
 import "../Styles/Home.css";
 
+//TODO: change text to a more cooler font and put some coloring on it. 
+//REMINDER: Added the Gitbranch create a page which holds the projects I did in a grid layout. 
 function HomePage() { 
     const navigatetoAbout = useNavigate(); 
     const navigatetoEmail = useNavigate(); 
@@ -14,7 +16,8 @@ function HomePage() {
         { icon: Linkedin, label: 'Linkedin', href:'https://www.linkedin.com/in/rayatchowdhury2005', external: true },
         { icon: Mail, label: 'Email' },
         { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/rayyatttz', external: true },
-        { icon: Github, label: 'Github', href: 'https://github.com/TheDonRay', external: true}
+        { icon: Github, label: 'Github', href: 'https://github.com/TheDonRay', external: true}, 
+        { icon: GitBranch, label: 'Projects'}
     ];
 
     return (

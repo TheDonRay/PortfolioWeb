@@ -2,7 +2,9 @@
 import "./Styles/App.css";  
 import HomePage from "./Components/Home.jsx"; 
 import About from "./Components/About.jsx";  
-import Email from "./Components/Email.jsx"; 
+import Email from "./Components/Email.jsx";  
+import Project from "./Components/Projects.jsx"; 
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
         <Route path="/email" element={<Email/>} />
         <Route path="/about" element={<About />} />
         <Route path="/" element={<HomePage />} />
+        <Route path="/project" element={<Project />} />
       </Routes>
     </Router>
   );
