@@ -6,6 +6,7 @@ import "../Styles/Home.css";
 //TODO: change text to a more cooler font and put some coloring on it. 
 //REMINDER: Added the Gitbranch create a page which holds the projects I did in a grid layout.  
 //TODO: make sure to link it onto the navItems which is a array of objects.  
+//TODO: Create github actionWorkFlow for this project. 
 
 function HomePage() { 
     const navigatetoAbout = useNavigate(); 
