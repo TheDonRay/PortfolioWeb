@@ -12,6 +12,7 @@ function HomePage() {
     // initilaize my use Navigates
     const navigatetoAbout = useNavigate(); 
     const navigatetoEmail = useNavigate();  
+    const navigateToProject = useNavigate(); 
 
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -41,10 +42,10 @@ function HomePage() {
                                 window.open(item.href, "_blank"); 
                             } else if (item.label === "About Me"){ 
                                 navigatetoAbout('/about');  
-                            } else if (item.label === "Project") { 
-                                navif
+                            } else if (item.label === "Projects") { 
+                                navigateToProject('/project');
                             }
-                            } else if (item.label === "Email"){ 
+                            else if (item.label === "Email"){ 
                                 navigatetoEmail('/email'); 
                             }
                         }
