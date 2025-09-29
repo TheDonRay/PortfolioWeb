@@ -8,9 +8,11 @@ import "../Styles/Home.css";
 //TODO: make sure to link it onto the navItems which is a array of objects.  
 //TODO: Create github actionWorkFlow for this project. 
 
-function HomePage() { 
+function HomePage() {  
+    // initilaize my use Navigates
     const navigatetoAbout = useNavigate(); 
-    const navigatetoEmail = useNavigate(); 
+    const navigatetoEmail = useNavigate();  
+
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -20,12 +22,12 @@ function HomePage() {
         { icon: Mail, label: 'Email' },
         { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/rayyatttz', external: true },
         { icon: Github, label: 'Github', href: 'https://github.com/TheDonRay', external: true}, 
-        { icon: GitBranch, label: 'Projects'}
+        { icon: GitBranch, label: 'Projects', w:'/project'}
     ];
 
     return (
         <div className="homepage-container">
-            <h1 className="h1css">Hey! My Name is Rayat Chowdhury. Welcome to My Portfolio!</h1>
+            <h1 className="h1css">Welcome to my Portfolio!</h1>
             
             {/* Floating Navigation Bar */}
             <nav className="floating-navbar">
@@ -38,7 +40,10 @@ function HomePage() {
                             if (item.external && item.href){ 
                                 window.open(item.href, "_blank"); 
                             } else if (item.label === "About Me"){ 
-                                navigatetoAbout('/about'); 
+                                navigatetoAbout('/about');  
+                            } else if (item.label === "Project") { 
+                                navif
+                            }
                             } else if (item.label === "Email"){ 
                                 navigatetoEmail('/email'); 
                             }
