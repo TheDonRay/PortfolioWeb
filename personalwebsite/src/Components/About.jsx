@@ -1,4 +1,5 @@
 import React from 'react'; 
+import '../Styles/About.css'; 
 
 //TODO: Create CSS files for the pages here and add to them of what you want to add and like a cool little about yourself etc. 
 

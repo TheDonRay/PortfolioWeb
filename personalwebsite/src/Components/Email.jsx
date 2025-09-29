@@ -1,4 +1,5 @@
 import React from "react"; 
+import '../Styles/Email.css'; 
 
 //TODO: Create CSS files for the eMAIL PAGES that has a cool way for people to reach out to you.  
 
