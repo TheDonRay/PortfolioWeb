@@ -1,17 +1,16 @@
-
-import "./Styles/App.css";  
-import HomePage from "./Components/Home.jsx"; 
-import About from "./Components/About.jsx";  
-import Email from "./Components/Email.jsx";  
-import Project from "./Components/Projects.jsx"; 
+import "./Styles/App.css";
+import HomePage from "./Components/Home.jsx";
+import About from "./Components/About.jsx";
+import Email from "./Components/Email.jsx";
+import Project from "./Components/Projects.jsx";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <Routes> 
-        <Route path="/email" element={<Email/>} />
+      <Routes>
+        <Route path="/email" element={<Email />} />
         <Route path="/about" element={<About />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/project" element={<Project />} />
