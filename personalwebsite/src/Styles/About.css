@@ -3,13 +3,13 @@
 .about-me-card {
     margin: 35px;
     text-align: center;
-    border: 10px solid rgba(0, 24, 236, 0.2);
+    border: 10px solid white;
     border-radius: 20px;
     box-shadow: white;
     padding: 30px;
     max-width: 350px; 
 
-    background: rgb(245, 235, 235);
+    background: black;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
       
@@ -22,13 +22,13 @@
 } 
 
 .Heading-Color{ 
-    color: black;  
+    color: white;  
     line-height: 15.3px;
     font-family: 'Quicksand', sans-serif;
 } 
 
 .paragraph-Color{  
-    color: black; 
+    color: white; 
     line-height: 25px; 
     font-family: 'Quicksand', sans-serif;
 }
