@@ -6,14 +6,17 @@ import "../Styles/About.css";
 function AboutMe() {
   return (
     <>
-      <div className="about-me-card"> 
+      <div className="about-me-card">
         <h1 className="Heading-Color">Rayat Chowdhury</h1>
         <p className="paragraph-Color">
-          Hey there! I like to think of myself as a bootleg Tony Stark — minus the billion-dollar lab and fancy AI (for now 😅).
-          I’m Rayat, a Computer Science student with a Math minor who loves backend software engineering. I enjoy designing the logic, 
-          structure, and systems that keep apps running smoothly — even when the server decides to be dramatic.
+          Hey there! I like to think of myself as a bootleg Tony Stark — minus
+          the billion-dollar lab and fancy AI (for now 😅). I’m Rayat, a
+          Computer Science student with a Math minor who loves backend software
+          engineering. I enjoy designing the logic, structure, and systems that
+          keep apps running smoothly — even when the server decides to be
+          dramatic.
         </p>
-      </div> 
+      </div>
 
       {/*TODO: Create another card div to represent my hobbies and interests*/}
     </>

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap'); 
- 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+
 * {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Homepage container with black background */
@@ -40,7 +40,7 @@
   padding: 1rem;
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.448);
-  backdrop-filter: blur(20px); 
+  backdrop-filter: blur(20px);
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
