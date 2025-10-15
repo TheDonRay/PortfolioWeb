@@ -13,7 +13,9 @@ function AboutMe() {
           I’m Rayat, a Computer Science student with a Math minor who loves backend software engineering. I enjoy designing the logic, 
           structure, and systems that keep apps running smoothly — even when the server decides to be dramatic.
         </p>
-      </div>
+      </div> 
+
+      {/*TODO: Create another card div to represent my hobbies and interests*/}
     </>
   );
 }
