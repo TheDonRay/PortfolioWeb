@@ -1,4 +1,5 @@
 body {
   background-color: black;
-  margin: 0; /* Remove default body margin */
+  margin: 0; /* Remove default body margin */ 
+  font-family: 'Quicksand', sans-serif;
 }
