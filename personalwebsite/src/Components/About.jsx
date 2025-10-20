@@ -26,6 +26,7 @@ export default function AboutMe() {
     newText(initialState)
   } 
 
+  //TODO: center Div to be on the left more of a css thing that i need to do. 
   return (
     <>
       <div className="about-me-card">
@@ -35,13 +36,15 @@ export default function AboutMe() {
           <button className ="button1" onClick={changeForClient}>Who is Rayat?😄</button> 
           <button className ="button2" onClick={Close}>Close</button>
         </p>
-      </div>
+      </div> 
+
+      //TODO: need to center divs with hobbies and goals etc. 
 
       {/*TODO: Create another card div to represent my hobbies and interests*/} 
       <div className="hobbydiv"> 
         <h1 className="hobby-heading">My Hobbies 😄!</h1> 
         <p> 
-          
+
         </p>
       </div>
     </>
