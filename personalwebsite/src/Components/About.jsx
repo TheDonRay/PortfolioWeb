@@ -32,8 +32,8 @@ export default function AboutMe() {
         <h1 className="Heading-Color">Rayat Chowdhury</h1>
         <p className="paragraph-Color">
           {originalText} 
-          <button onClick={changeForClient}>Let's Find Out!</button> 
-          <button onClick={Close}>Close</button>
+          <button className ="button1" onClick={changeForClient}>Let's Find Out!</button> 
+          <button className ="button2" onClick={Close}>Close</button>
         </p>
       </div>
 
