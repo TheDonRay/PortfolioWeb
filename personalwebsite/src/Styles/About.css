@@ -32,3 +32,27 @@
   line-height: 25px;
   font-family: "Quicksand", sans-serif;
 }
+
+.button1 {  
+  padding: 10px; 
+  display: block; 
+  margin: auto; 
+  margin-top: 7px; 
+  margin-bottom: 8px; 
+  border-radius: 5px; 
+  box-shadow: white; 
+  color: black; 
+  font-weight: 600; 
+} 
+
+.button2 { 
+  padding: 10px; 
+  display: block; 
+  margin: auto; 
+  margin-top: 7px; 
+  margin-bottom: 8px; 
+  border-radius: 5px; 
+  box-shadow: white; 
+  color: black; 
+  font-weight: 600; 
+}

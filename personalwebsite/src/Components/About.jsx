@@ -6,17 +6,17 @@ import { useState } from 'react';
 
 export default function AboutMe() {  
 
-  const initialState = 'Who is Rayat?'; 
+  const initialState = ''; 
   const newTextAboutMe =  `
-          Hey there! I like to think of myself as a bootleg Tony Stark — minus
-          the billion-dollar lab and fancy AI (for now 😅). I\’m Rayat, a
-          Computer Science student with a Math minor who loves backend software
+          Hey there! I'm Rayat. I like to think of myself as a bootleg Tony Stark — minus
+          the billion-dollar lab and fancy AI (for now 😅). I\’m a
+          Computer Science student with a Math minor who loves Software Engineering, more specifically backend software
           engineering. I enjoy designing the logic, structure, and systems that
           keep apps running smoothly — even when the server decides to be
           dramatic. `; 
 
   // initialize state here as such 
-  const [originalText, newText] = useState('Who is Rayat?'); 
+  const [originalText, newText] = useState(''); 
   // create another funciton for this cool feature here as such 
   function changeForClient() { 
     newText(newTextAboutMe); 
@@ -32,12 +32,18 @@ export default function AboutMe() {
         <h1 className="Heading-Color">Rayat Chowdhury</h1>
         <p className="paragraph-Color">
           {originalText} 
-          <button className ="button1" onClick={changeForClient}>Let's Find Out!</button> 
+          <button className ="button1" onClick={changeForClient}>Who is Rayat?😄</button> 
           <button className ="button2" onClick={Close}>Close</button>
         </p>
       </div>
 
-      {/*TODO: Create another card div to represent my hobbies and interests*/}
+      {/*TODO: Create another card div to represent my hobbies and interests*/} 
+      <div className="hobbydiv"> 
+        <h1 className="hobby-heading">My Hobbies 😄!</h1> 
+        <p> 
+          
+        </p>
+      </div>
     </>
   );
 }
