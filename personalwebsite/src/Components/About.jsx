@@ -19,6 +19,8 @@ export default function AboutMe() {
   const hobbyinitialState = ''; 
   const newHobbyState = `When I'm not studying for my classes, some of my Hobbies are..`; 
 
+  const goalInitialState = ''; 
+  const newGoalState = 'Write my goals here'; 
 
   // initialize state here as such for the about me 
   const [originalText, newText] = useState(''); 
@@ -45,6 +47,15 @@ export default function AboutMe() {
   // create a funciton for the close button here as such 
   function closeHobbyButton() { 
     newHtext(hobbyinitialState); 
+  } 
+
+  // create function for the goals card 
+  function goalsCard() { 
+    newGoalText(newGoalState); 
+  } 
+
+  function closeGoalCard() { 
+    newGoalText(goalInitialState);
   }
 
   //TODO: center Div to be on the left more of a css thing that i need to do. 
@@ -64,15 +75,18 @@ export default function AboutMe() {
         <h1 className="hobby-heading">My Hobbies 🧑‍💻!</h1> 
         <p className="paragraphstyling"> 
           {orightext}  
-          <button onClick ={hobbyButton} className="hobbybtn"></button> {/*This is for the view my Hobbies button*/} 
-          <button onClick = {closeHobbyButton} className="hobbyclose-btn"></button> {/*This is for the close button here as such*/}
+          <button onClick ={hobbyButton} className="hobbybtn">Hobbies</button> {/*This is for the view my Hobbies button*/} 
+          <button onClick = {closeHobbyButton} className="hobbyclose-btn">Close</button> {/*This is for the close button here as such*/}
         </p>
       </div> 
 
       {/*To do Creating another div here as such*/} 
       <div className="GoalsCard"> 
         <h1 className="goal-heading">My Goals 📈! </h1> 
-        <p className="paragraphtextforGoals"> 
+        <p className="paragraphtextforGoals">  
+          {origGoaltext} 
+          <button onClick = {goalsCard} className="goalsbtn">Goals</button> {/*This is for the view my Hobbies button*/} 
+          <button onClick = {closeGoalCard} className="goalsclose-btn">Close</button>
         </p>
       </div>
     </>
