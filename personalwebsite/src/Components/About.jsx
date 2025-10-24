@@ -15,8 +15,9 @@ export default function AboutMe() {
           keep apps running smoothly — even when the server decides to be
           dramatic. `; 
 
-  // initialize state here as such 
+  // initialize state here as such for the about me 
   const [originalText, newText] = useState(''); 
+  // Create 
   // create another funciton for this cool feature here as such 
   function changeForClient() { 
     newText(newTextAboutMe); 
@@ -50,7 +51,10 @@ export default function AboutMe() {
       <div className="GoalsCard"> 
         <h1 className="goal-heading">My Goals 📈! </h1> 
         <p className="paragraphtextforGoals"> 
-          My goals aren't really for myself but for my parents. 
+          My goal is simple — to become a Software Engineer who creates meaningful impact through technology. 
+          I’m driven by the idea that software can transform lives, whether in healthcare, finance, or everyday life. 
+          For me, it’s not just about writing code — it’s about building solutions that make a difference, whether it be for medical, 
+          research, finance, or even solving a personal problem I'm dealing with. 
         </p>
       </div>
     </>
