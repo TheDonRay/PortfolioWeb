@@ -25,7 +25,7 @@
   overflow: hidden;
 }
 
-.Heading-Color {
+.Heading-Color, .hobbydiv, .GoalsCard {
   color: white;
   line-height: 15.3px;
   font-family: "Quicksand", sans-serif;
