@@ -49,7 +49,7 @@ export default function AboutMe() {
       {/*To do Creating another div here as such*/} 
       <div className="GoalsDiv"> 
         <h1 className="goal-heading"> </h1> 
-        <p> 
+        <p className="paragraphtextforGoals"> 
            
         </p>
       </div>
