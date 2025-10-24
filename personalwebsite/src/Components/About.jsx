@@ -47,10 +47,10 @@ export default function AboutMe() {
       </div> 
 
       {/*To do Creating another div here as such*/} 
-      <div className="GoalsDiv"> 
+      <div className="GoalsCard"> 
         <h1 className="goal-heading"> </h1> 
         <p className="paragraphtextforGoals"> 
-           
+          My goals aren't really for myself but for my parents. 
         </p>
       </div>
     </>
