@@ -41,7 +41,7 @@ export default function AboutMe() {
       {/*TODO: Create another card div to represent my hobbies and interests*/} 
       <div className="hobbydiv"> 
         <h1 className="hobby-heading">My Hobbies 😄!</h1> 
-        <p> 
+        <p className="paragraphstyling"> 
           When I'm not studying for my classes, some of my Hobbies are..
         </p>
       </div>
