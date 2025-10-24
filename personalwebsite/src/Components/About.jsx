@@ -30,7 +30,7 @@ export default function AboutMe() {
   return (
     <>
       <div className="about-me-card">
-        <h1 className="Heading-Color">Rayat Chowdhury</h1>
+        <h1 className="Heading-Color">Rayat Chowdhury 🤵🏻‍♂️</h1>
         <p className="paragraph-Color">
           {originalText} 
           <button className ="button1" onClick={changeForClient}>Who is Rayat?😄</button> 
@@ -40,7 +40,7 @@ export default function AboutMe() {
 
       {/*TODO: Create another card div to represent my hobbies and interests*/} 
       <div className="hobbydiv"> 
-        <h1 className="hobby-heading">My Hobbies 😄!</h1> 
+        <h1 className="hobby-heading">My Hobbies 🧑‍💻!</h1> 
         <p className="paragraphstyling"> 
           When I'm not studying for my classes, some of my Hobbies are..
         </p>
@@ -48,7 +48,7 @@ export default function AboutMe() {
 
       {/*To do Creating another div here as such*/} 
       <div className="GoalsCard"> 
-        <h1 className="goal-heading"> </h1> 
+        <h1 className="goal-heading">My Goals 📈! </h1> 
         <p className="paragraphtextforGoals"> 
           My goals aren't really for myself but for my parents. 
         </p>
