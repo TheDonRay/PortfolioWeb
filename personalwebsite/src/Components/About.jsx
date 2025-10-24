@@ -23,7 +23,10 @@ export default function AboutMe() {
   // initialize state here as such for the about me 
   const [originalText, newText] = useState(''); 
   // Create another useState here for the button for the Hobbies Card here as such 
-  const [orightext, newHtext] = useState('');  
+  const [orightext, newHtext] = useState('');   
+
+  //create another one for the useState here for the goals card 
+  const [origGoaltext, newGoalText] = useState(''); 
 
   // create another funciton for this cool feature here as such 
   function changeForClient() { 
@@ -48,7 +51,7 @@ export default function AboutMe() {
   return (
     <>
       <div className="about-me-card">
-        <h1 className="Heading-Color">Rayat Chowdhury 🤵🏻‍♂️</h1>
+        <h1 className="Heading-Color">Rayat Chowdhury🤵🏻‍♂️</h1>
         <p className="paragraph-Color">
           {originalText} 
           <button className ="button1" onClick={changeForClient}>Who is Rayat?😄</button> 
@@ -60,7 +63,9 @@ export default function AboutMe() {
       <div className="hobbydiv"> 
         <h1 className="hobby-heading">My Hobbies 🧑‍💻!</h1> 
         <p className="paragraphstyling"> 
-          
+          {orightext}  
+          <button onClick ={hobbyButton} className="hobbybtn"></button> {/*This is for the view my Hobbies button*/} 
+          <button onClick = {closeHobbyButton} className="hobbyclose-btn"></button> {/*This is for the close button here as such*/}
         </p>
       </div> 
 
@@ -68,9 +73,6 @@ export default function AboutMe() {
       <div className="GoalsCard"> 
         <h1 className="goal-heading">My Goals 📈! </h1> 
         <p className="paragraphtextforGoals"> 
-          {orightext}  
-          <button></button> {/*This is for the view my Hobbies button*/} 
-          <button></button> {/*This is for the close button here as such*/}
         </p>
       </div>
     </>
