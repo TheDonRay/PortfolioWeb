@@ -44,6 +44,14 @@ export default function AboutMe() {
         <p className="paragraphstyling"> 
           When I'm not studying for my classes, some of my Hobbies are..
         </p>
+      </div> 
+
+      {/*To do Creating another div here as such*/} 
+      <div> 
+        <h1> </h1> 
+        <p> 
+          
+        </p>
       </div>
     </>
   );
