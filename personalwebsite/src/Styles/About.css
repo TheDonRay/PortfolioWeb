@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
 
-.about-me-card { 
-  margin: 35px auto; 
-  margin-left: 20px; 
+.about-me-card, .hobbydiv {  
+  display: inline-block; 
+  vertical-align: top;
+  margin: 35px 25px; 
+  /* margin-left: 25px;  */
   margin-top: 150px;
   text-align: center;
   border: 10px solid white;
@@ -59,4 +61,4 @@
   font-weight: 600; 
 } 
 
-/*Now working on second div to be in the center which highlights my hobbies but will be next to it,*/
+/*Now working on second div to be in the center which highlights my hobbies but will be next to it,*/ 
