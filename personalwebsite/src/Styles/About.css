@@ -25,19 +25,19 @@
   overflow: hidden;
 }
 
-.Heading-Color, .hobbydiv, .GoalsCard {
+.Heading-Color, .hobby-heading, .goal-heading {
   color: white;
   line-height: 15.3px;
   font-family: "Quicksand", sans-serif;
 }
 
-.paragraph-Color {
+.paragraph-Color, .paragraphstyling, .paragraphtextforGoals {
   color: white;
   line-height: 25px;
   font-family: "Quicksand", sans-serif;
 }
 
-.button1 {  
+.button1, .hobbybtn, .goalsbtn {  
   padding: 10px; 
   display: block; 
   margin: auto; 
@@ -49,7 +49,7 @@
   font-weight: 600; 
 } 
 
-.button2 { 
+.button2, .hobbyclose-btn, .goalsclose-btn { 
   padding: 10px; 
   display: block; 
   margin: auto; 
