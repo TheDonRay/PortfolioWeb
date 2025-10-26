@@ -26,7 +26,7 @@
 /* Floating Navigation Bar */
 .floating-navbar {
   position: fixed;
-  margin-bottom: -27.5rem;
+  margin-bottom: -27rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -150,11 +150,21 @@
 }
 
 .floating-orb-1 {
-  top: -4rem;
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.3) 70%
+  );
+  animation: pulse 2s infinite ease-in-out;
+  box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.6);
+  opacity: 0.8;
+  /* top: -4rem;
   left: -7rem;
   width: 2rem;
   height: 2rem;
-  background: white;
+  background: white; */
 }
 
 .floating-orb-2 {
@@ -178,10 +188,14 @@
 @keyframes pulse {
   0%,
   100% {
-    opacity: 5;
+    transform: scale(1);
+    /* opacity: 5; */
+    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.7);
   }
   50% {
-    opacity: 0.1;
+    transform: scale(1.1);
+    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 1);
+    /* opacity: 0.1; */
   }
 }
 

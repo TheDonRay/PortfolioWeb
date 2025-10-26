@@ -1,5 +1,5 @@
 // EmailPage.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "../Styles/Email.css";
 
 function EmailPage() {
@@ -25,16 +25,15 @@ function EmailPage() {
         <h1 className="email-title">Let's Connect!</h1>
 
         <p className="email-description">
-          If you’d like to connect, discuss ideas, or explore potential collaborations, feel free to reach out to me via email or on Instagram at @rayyatttz
+          If you’d like to connect, discuss ideas, or explore potential
+          collaborations, feel free to reach out to me via email or on Instagram
+          at @rayyatttz
         </p>
 
         {/* Email Display Box */}
         <div className="email-box">
           <div className="email-label">Email Address</div>
-          <a 
-            href={`mailto:${email}`}
-            className="email-link"
-          >
+          <a href={`mailto:${email}`} className="email-link">
             {email}
             <span className="email-icon">✉️</span>
           </a>
@@ -42,10 +41,7 @@ function EmailPage() {
 
         {/* Action Buttons */}
         <div className="button-container">
-          <button
-            className="copy-btn"
-            onClick={copyToClipboard}
-          >
+          <button className="copy-btn" onClick={copyToClipboard}>
             {copied ? (
               <>
                 <span>✓</span> Copied!
@@ -61,7 +57,8 @@ function EmailPage() {
         {/* Footer Text */}
         <div className="email-footer">
           <p className="footer-text">
-            💬 I typically respond within 24-48 hours<br/>
+            💬 I typically respond within 24-48 hours
+            <br />
           </p>
         </div>
       </div>
