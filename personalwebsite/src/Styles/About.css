@@ -1,64 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
 
-.about-me-card, .hobbydiv, .GoalsCard {  
-  display: inline-block; 
-  vertical-align: top;
-  margin: 35px 45px; 
-  /* margin-left: 25px;  */
-  margin-top: 150px;
-  text-align: center;
-  border: 10px solid white;
-  border-radius: 20px;
-  box-shadow: 0 0 10px white;
-  padding: 30px;
-  max-width: 350px;
 
-  background: black;
+
+/* Wrapper for cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 150px 20px 50px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-me-card, .hobbydiv, .GoalsCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  width: 350px;
+  min-height: 400px;
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
-  /* Smooth transitions */
   transition: all 0.3s ease;
-
-  /* Subtle gradient border */
   position: relative;
   overflow: hidden;
 }
 
+.about-me-card:hover, .hobbydiv:hover, .GoalsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 .Heading-Color, .hobby-heading, .goal-heading {
   color: white;
-  line-height: 15.3px;
+  font-size: 24px;
+  margin-bottom: 10px;
   font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 
 .paragraph-Color, .paragraphstyling, .paragraphtextforGoals {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 25px;
   font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  flex-grow: 1;
+  margin-bottom: 15px;
+  
 }
 
-.button1, .hobbybtn, .goalsbtn {  
-  padding: 10px; 
-  display: block; 
-  margin: auto; 
-  margin-top: 7px; 
-  margin-bottom: 8px; 
-  border-radius: 5px; 
-  box-shadow: white; 
-  color: black; 
-  font-weight: 600; 
-} 
+.button1, .hobbybtn, .goalsbtn {
+  padding: 12px 25px;
+  display: block;
+  margin: 8px auto;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
 
-.button2, .hobbyclose-btn, .goalsclose-btn { 
-  padding: 10px; 
-  display: block; 
-  margin: auto; 
-  margin-top: 7px; 
-  margin-bottom: 8px; 
-  border-radius: 5px; 
-  box-shadow: white; 
-  color: black; 
-  font-weight: 600; 
-} 
+.button1:hover, .hobbybtn:hover, .goalsbtn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
 
-/*Now working on second div to be in the center which highlights my hobbies but will be next to it,*/ 
+.button2, .hobbyclose-btn, .goalsclose-btn {
+  padding: 12px 24px;
+  display: block;
+  margin: 8px auto;
+  border-radius: 8px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button2:hover, .hobbyclose-btn:hover, .goalsclose-btn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .cards-container {
+    gap: 30px;
+  }
+  
+  .about-me-card, .hobbydiv, .GoalsCard {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .about-me-card, .hobbydiv, .GoalsCard {
+    width: 90%;
+    max-width: 400px;
+  }
+}
