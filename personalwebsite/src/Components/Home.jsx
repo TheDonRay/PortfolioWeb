@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  User,
-  Github,
-  Mail,
-  Linkedin,
-  Instagram,
-  GitBranch,
-} from "lucide-react";
+import { User, Github, Mail, Linkedin, Instagram } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/Home.css";
 
@@ -44,7 +37,6 @@ function HomePage() {
       href: "https://github.com/TheDonRay",
       external: true,
     },
-    { icon: GitBranch, label: "Projects", w: "/project" },
   ];
 
   return (
@@ -63,8 +55,6 @@ function HomePage() {
                 window.open(item.href, "_blank");
               } else if (item.label === "About Me") {
                 navigatetoAbout("/about");
-              } else if (item.label === "Projects") {
-                navigateToProject("/project");
               } else if (item.label === "Email") {
                 navigatetoEmail("/email");
               }
