@@ -12,7 +12,7 @@ function HomePage() {
   // initilaize my use Navigates
   const navigatetoAbout = useNavigate();
   const navigatetoEmail = useNavigate();
-  const navigateToProject = useNavigate();
+  // const navigateToProject = useNavigate();
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
