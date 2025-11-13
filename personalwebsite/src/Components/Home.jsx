@@ -45,7 +45,7 @@ function HomePage() {
       <div className="moon"></div>
       <div className="stars"></div> 
       
-      <h1 className="h1css">Hey I'm Rayat! Welcome to my Portfolio!</h1>
+      <h1 className="h1css">Rayat's World!</h1>
 
       {/* Floating Navigation Bar */}
       <nav className="floating-navbar">
