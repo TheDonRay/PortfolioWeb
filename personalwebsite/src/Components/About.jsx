@@ -15,9 +15,9 @@ export default function AboutMe() {
 
   // Hobbies array
   const hobbiesArray = [
-    "Diving deeper into Node.js, exploring Express.js, and building REST APIs just for fun",
-    "Huge car enthusiast, especially BMWs (favorites: 550i, 540i, 535i)",
-    "Enjoy basketball or a relaxing round of golf to unwind",
+    "I really like creating projects using ExpressJS and developing my knowledge on creating and maintaing API's. Anything in backend Development I'm really interested in",
+    "I'm a huge BMW car enthusiast. My favorite BMWs are the 550i, 540i, 535i, 330i",
+    "For sports I enjoy basketball or a relaxing round of golf to unwind",
   ];
 
   // Goals text
